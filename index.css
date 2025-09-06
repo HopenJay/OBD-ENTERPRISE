@@ -105,9 +105,15 @@ header div span{
     gap: 1em;
 }
 
+.product_image{
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+
 .product_img{
-    width: 100px;
-    border-radius: 100px;
+    width: 80%;
+    border-radius: 20px;
     border: 2px solid #ffd700;
 }
 
