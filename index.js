@@ -1,4 +1,3 @@
-
 class Products{
     // id;
     // name;
@@ -32,7 +31,7 @@ class Products{
             </div>
 
             <div>
-                    <a href="#" class="purchase_btn" data-product-name="${this.name}" id = 'whatsappLink'>
+                    <a href="#" class="purchase_btn" data-product-name="${this.name}">
                         PURCHASE
                     </a>
             </div>
@@ -65,7 +64,8 @@ class Products{
         // alert(`U clicked on ${productName}`);
         const encodedMsg = encodeURIComponent(rawMsg);
         const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMsg}`;
-        document.getElementById('whatsappLink').href = whatsappLink; 
+    
+        window.open(whatsappLink, "_blank")
     };
 
 }

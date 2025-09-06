@@ -13,8 +13,37 @@ body{
     place-content: center;
 }
 
+nav{
+    color: gold;
+    background-color: #000;
+    display: flex;
+}
+
+.nav{
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    height: 200px;
+    padding: 1em;
+}
+
+.nav > div > a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.nav_link{
+    border: 1px solid #ffd700;
+    border-radius: 25px;
+    padding: 0.5em;
+    text-align: center;
+}
+
 header{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     margin-top: 1em;
     border-radius: 25px;
     height: 300px;
@@ -32,7 +61,7 @@ header > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     margin-top: 0.5em;
     height: 100%;
     width: 100%;
@@ -51,6 +80,7 @@ header div span{
     font-size: 1em;
     /* text-align: center; */
     padding: 0.5em 2em;
+    font-style: italic;
 }
 
 .contact_tag{
@@ -99,7 +129,7 @@ header div span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em 0em;
+    padding: 0em 0em 1em;
     color: #ffd700;
     font-weight: bolder;
     gap: 1em;
@@ -112,7 +142,7 @@ header div span{
 }
 
 .product_img{
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
     border: 2px solid #ffd700;
 }
@@ -137,6 +167,6 @@ header{
 }
 
 .product{
-    width: 80%;
+    width: 100%;
 }
 }

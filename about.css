@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    /* height: 100vh; */
+    display: grid;
+    place-content: center;
+}
+
+header{
+    border: 1px solid #000;
+    /* width: 100%; */
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffd700;
+    border-radius: 25px;
+    background-image: url(abt.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header > div{
+    /* width: 100%; */
+    height: 300px;
+    display: grid;
+    place-content: center;
+    font-weight: bold;
+    font-size: 2em;
+    font-style: italic;
+}
+
+.tab{
+    font-style: normal;
+    font-size: 2em;
+}
+
+section{
+    font-weight: bold;
+}
+
+.abt{
+    border: 1px solid #000;
+    border-radius: 25px;
+    margin-top: 1em;
+    color: gold;
+    background-color: #000;
+    padding: 1em;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+.contact{
+    border: 1px solid #000;
+    border-radius: 25px;
+    margin-top: 1em;
+    color: gold;
+    background-color: #000;
+    padding: 1em;
+    width: 100%;
+}
+
+.contact_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5em;
+    max-width: 100%;
+    place-content: center;
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffd700;
+}
+
+.address{
+    border: 1px solid #000;
+    border-radius: 25px;
+    margin-top: 1em;
+    color: gold;
+    background-color: #000;
+    padding: 1em;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    header > div{
+        /* width: 100%; */
+        height: 300px;
+        display: grid;
+        place-content: center;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .contact_list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 0.5em;
+        max-width: 100%;
+        place-content: center;
+    }
+}
