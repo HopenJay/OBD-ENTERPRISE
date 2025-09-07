@@ -40,3 +40,60 @@ const Tiktok = new Contact({
     
 
 const Facebook = new Contact({social: 'facebook', link: `https://facebook.com/?`, accName: 'zackme'});
+
+//Toggling
+const toggle = document.querySelectorAll('.nav_links');
+const toggle1 = document.querySelectorAll('.nav_link');
+
+// Function for toggling the navlinks (reusable snippets);
+toggle.forEach((button) => {
+    button.addEventListener('click', () => {
+        
+            if (button.classList.contains('active')) {
+                button.classList.remove('active');
+            }
+             else {
+                turnOffPreviousButton();
+                button.classList.add('active');
+             }
+        }
+    )
+})
+
+function turnOffPreviousButton() {
+    const previousButton = document.querySelector('.active');
+    if (previousButton) {
+        previousButton.classList.remove('active');
+    }
+}
+
+
+toggle1.forEach((button) => {
+    button.addEventListener('click', () => {
+        
+            if (button.classList.contains('active')) {
+                button.classList.remove('active');
+            }
+            else {
+                turnOffPreviousButton();
+                button.classList.add('active');
+            }
+        }
+    )
+})
+
+// function turnOffPreviousButton() {
+    //     const previousButton = document.querySelector('.active');
+    //     if (previousButton) {
+        //         previousButton.classList.remove('active');
+        //     }
+        // }
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav').classList.toggle('slide_in');
+    document.querySelector('.hamburger').style.display = "none"
+})
+
+document.querySelector('.close_nav').addEventListener('click', () => {
+    document.querySelector('.nav').classList.toggle('slide_in')
+    document.querySelector('.hamburger').style.display = "flex"
+});
